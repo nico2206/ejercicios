@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS tareasdb;
+USE tareasdb;
+
+CREATE TABLE IF NOT EXISTS tareas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    descripcion VARCHAR(255) NOT NULL,
+    completada BOOLEAN DEFAULT FALSE
+);
